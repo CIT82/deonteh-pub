@@ -1,0 +1,15 @@
+# 15 things I will complete to start getting my website together!
+- Change the title and site name
+- find pictures to better the content of my page
+- adjust the nav menu to pages I would actually use
+- create a css file for alternate files i will be adding
+- Add semantic tags
+- Customize the dropdown menu
+- change class names to better fit my content
+- begin adding paragraphs to provide explanations
+- Add use to buttons so they actually do something
+- Make a few adjustment to the bootstrap to better allign my containers.
+- figure out icons and how they work
+- Add javascript where needed
+- create a couple of the additional files
+- add copyright in the footer
