@@ -85,7 +85,7 @@
                 </li>
                 <li class="search-item">
                   <div class="search-bar">
-                    <form action="/action_page.php" class="search-form d-flex no-margin">
+                    <form action="search.html" class="search-form d-flex no-margin">
                       <i class="icon icon-search"></i>
                       <input type="text" placeholder="SEARCH.." name="search"
                         class="title-placeholder no-margin text-light ">
@@ -99,6 +99,30 @@
       </div>
     </div>
   </header>
+  <h1>User Registration</h1>
+  <img src="img/register.jpg" alt="Register">
+  <form action="#" method="post">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required><br><br>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+      
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required><br><br>
+      
+      <label for="confirm_password">Confirm Password:</label>
+      <input type="password" id="confirm_password" name="confirm_password" required><br><br>
+      
+      <input type="submit" value="Register">
+  </form>
+  <p>
+    In this user registration page, users can create an account by providing their username, email address, and password. Here's what users can do on this page:
+    
+    Enter Information: Users can input their desired username, email, password, and confirm their password in the designated input fields.
+    Submit Form: After filling in the required information, users can click the "Register" button to submit the form. This action sends the entered data to the server for processing, typically to create a new user account in a database.
+    Validation: The form includes HTML attributes like required for basic client-side validation, ensuring that users fill out all required fields before submitting the form. However, additional client-side or server-side validation may be implemented to verify the accuracy and completeness of the provided information.
+    Feedback: If there are any errors or missing information in the form, the server may respond with error messages to alert users about what needs to be corrected before resubmitting the form.</p>
   <footer id="footer" class="overflow-hidden">
     <div class="container mt-5">
       <div class="row">

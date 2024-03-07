@@ -98,133 +98,139 @@
       </div>
     </div>
   </header>
-  <h1>Contact List</h1>
-  <h3>Below Are the ways to contact us!</h3>
-  <ul id="contact-list">
-      <li>
-          <strong>Name:</strong> John Doe<br>
-          <strong>Email:</strong> john@example.com<br>
-          <strong>Phone:</strong> 123-456-7890
-      </li>
-      <li>
-          <strong>Name:</strong> Jane Smith<br>
-          <strong>Email:</strong> jane@example.com<br>
-          <strong>Phone:</strong> 987-654-3210
-      </li>
-    
-  </ul>
-  <p>Reaching out to the owners of a website holds significant importance in various contexts, particularly for fostering collaboration, building partnerships, and resolving issues effectively. Firstly, it allows for establishing connections with the individuals or organizations behind the website, enabling opportunities for networking and collaboration on mutual interests or projects. Secondly, reaching out can be crucial for resolving technical issues, such as broken links, security vulnerabilities, or content inaccuracies, ensuring a seamless user experience and maintaining the integrity of the website. Additionally, contacting website owners provides an avenue for providing feedback, suggestions, or inquiries, fostering open communication and improving the overall quality of the website. Ultimately, proactive outreach to website owners facilitates constructive dialogue, strengthens relationships, and contributes to a more cohesive and supportive online community.</p>
-  <img src="img/quan.jpg" alt="Quan">
-  <footer id="footer" class="overflow-hidden">
-    <div class="container mt-5">
-      <div class="row">
-        <div class="footer-top-area">
-          <div class="row d-flex flex-wrap justify-content-between">
-            <div class="col-lg-3 col-sm-6">
-              <div class="footer-menu menu-001">
-                <img src="img/logo.png.jpeg" alt="logo">
-                <p>Dreams come true, you gotta chase them!<p>
-                <div
-                  class="newsletter-button d-flex flex-wrap align-items-center justify-content-between border-bottom widget-menu">
-                  <input type="text" name="Subscribe" placeholder="Enter your email address...">
-                  <a href="#">
-                    <i class="icon icon-send"></i>
-                  </a>
-                </div>
-                <div class="social-links">
-                  <ul class="d-flex list-unstyled">
-                    <li>
-                      <a href="#">
-                        <i class="icon icon-facebook"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i class="icon icon-twitter"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i class="icon icon-instagram1"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i class="icon icon-youtube"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i class="icon icon-behance"></i>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
+  <h1>Search Redirect</h1>
+  <h3>You are being redirected to this page due to our search abr still undergoing maintenance!
+    please forgive us and access our sitemap located at the bottom of the page, as it will allow complete navigation!
+  </h3>
+  <form id="searchForm">
+      <input type="text" id="searchInput" placeholder="Enter search query...">
+      <button type="submit">Search</button>
+  </form>
+
+  <script>
+      document.getElementById("searchForm").addEventListener("submit", function(event) {
+          event.preventDefault(); // Prevent form submission
+          
+          var searchQuery = document.getElementById("searchInput").value.trim();
+          
+          if (searchQuery === "") {
+              window.location.href = "error.html"; // Redirect to error page if search query is empty
+          } else {
+              // Redirect to search results page with search query as parameter
+              window.location.href = "search-results.html?q=" + encodeURIComponent(searchQuery);
+          }
+      });
+  </script>
+<footer id="footer" class="overflow-hidden">
+  <div class="container mt-5">
+    <div class="row">
+      <div class="footer-top-area">
+        <div class="row d-flex flex-wrap justify-content-between">
+          <div class="col-lg-3 col-sm-6">
+            <div class="footer-menu menu-001">
+              <img src="img/logo.png.jpeg" alt="logo">
+              <p>Dreams come true, you gotta chase them!<p>
+              <div
+                class="newsletter-button d-flex flex-wrap align-items-center justify-content-between border-bottom widget-menu">
+                <input type="text" name="Subscribe" placeholder="Enter your email address...">
+                <a href="#">
+                  <i class="icon icon-send"></i>
+                </a>
               </div>
-            </div>
-            <div class="col-lg-2 col-sm-6">
-              <div class="footer-menu menu-002">
-                <h5 class="widget-title">Quick Links</h5>
-                <ul class="menu-list list-unstyled text-uppercase">
-                  <li class="menu-item">
-                    <a href="index.html">Home</a>
+              <div class="social-links">
+                <ul class="d-flex list-unstyled">
+                  <li>
+                    <a href="#">
+                      <i class="icon icon-facebook"></i>
+                    </a>
                   </li>
-                  <li class="menu-item">
-                    <a href="rags-to-riches.html">Clothing</a>
+                  <li>
+                    <a href="#">
+                      <i class="icon icon-twitter"></i>
+                    </a>
                   </li>
-                  <li class="menu-item">
-                    <a href="hair-accessories.html">Hair Accessories</a>
+                  <li>
+                    <a href="#">
+                      <i class="icon icon-instagram1"></i>
+                    </a>
                   </li>
-                  <li class="menu-item">
-                    <a href="events.html">Events</a>
+                  <li>
+                    <a href="#">
+                      <i class="icon icon-youtube"></i>
+                    </a>
                   </li>
-                  <li class="menu-item">
-                    <a href="contacts.html">Contact</a>
-                  </li>
-                  <li class="menu-item">
-                    <a href="sitemap.html">Sitemap</a>
+                  <li>
+                    <a href="#">
+                      <i class="icon icon-behance"></i>
+                    </a>
                   </li>
                 </ul>
               </div>
             </div>
-        
-            <div class="col-lg-3 col-sm-6">
-              <div class="footer-menu contact-item menu-004">
-                <h5 class="widget-title">Contact Us</h5>
-                <p>Do you have any queries or suggestions? <a href="mailto:">yourinfo@gmail.com</a>
-                </p>
-                <p>If you need support? Just give us a call. <a href="">+55 111 222 333 44</a>
-                </p>
-              </div>
+          </div>
+          <div class="col-lg-2 col-sm-6">
+            <div class="footer-menu menu-002">
+              <h5 class="widget-title">Quick Links</h5>
+              <ul class="menu-list list-unstyled text-uppercase">
+                <li class="menu-item">
+                  <a href="index.html">Home</a>
+                </li>
+                <li class="menu-item">
+                  <a href="rags-to-riches.html">Clothing</a>
+                </li>
+                <li class="menu-item">
+                  <a href="hair-accessories.html">Hair Accessories</a>
+                </li>
+                <li class="menu-item">
+                  <a href="events.html">Events</a>
+                </li>
+                <li class="menu-item">
+                  <a href="contacts.html">Contact</a>
+                </li>
+                <li class="menu-item">
+                  <a href="sitemap.html">Sitemap</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+      
+          <div class="col-lg-3 col-sm-6">
+            <div class="footer-menu contact-item menu-004">
+              <h5 class="widget-title">Contact Us</h5>
+              <p>Do you have any queries or suggestions? <a href="mailto:">yourinfo@gmail.com</a>
+              </p>
+              <p>If you need support? Just give us a call. <a href="">+55 111 222 333 44</a>
+              </p>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <hr>
-    <div id="footer-bottom">
-      <div class="container">
-        <div class="row d-flex flex-wrap justify-content-between mb-3">
-          <div class="col-md-4 col-sm-6">
-            <div class="Shipping d-flex">
-              <p>We ship with:</p>
-              <div class="card-wrap">
-                <img src="images/dhl.png" alt="visa">
-                <img src="images/shippingcard.png" alt="mastercard">
-              </div>
+  </div>
+  <hr>
+  <div id="footer-bottom">
+    <div class="container">
+      <div class="row d-flex flex-wrap justify-content-between mb-3">
+        <div class="col-md-4 col-sm-6">
+          <div class="Shipping d-flex">
+            <p>We ship with:</p>
+            <div class="card-wrap">
+              <img src="images/dhl.png" alt="visa">
+              <img src="images/shippingcard.png" alt="mastercard">
             </div>
           </div>
-          <div class="col-md-4 col-sm-6">
-            <div class="payment-method d-flex justify-content-md-center">
-              <p>Payment options:</p>
-              <div class="card-wrap">
-                <img src="images/visa.jpg" alt="visa">
-                <img src="images/mastercard.jpg" alt="mastercard">
-                <img src="images/paypal.jpg" alt="paypal">
-              </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="payment-method d-flex justify-content-md-center">
+            <p>Payment options:</p>
+            <div class="card-wrap">
+              <img src="images/visa.jpg" alt="visa">
+              <img src="images/mastercard.jpg" alt="mastercard">
+              <img src="images/paypal.jpg" alt="paypal">
             </div>
           </div>
-  </footer>
+        </div>
+</footer>
      
       </body>
       script ==================================================
